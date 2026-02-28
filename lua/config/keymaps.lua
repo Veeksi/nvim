@@ -5,9 +5,7 @@ vim.g.mapleader = " "
 map("n", "<leader>a", "ggVG", { desc = "Select all" })
 map("n", "U", "<C-r>", { desc = "Redo" })
 
--- Choose ONE:
 map("n", "Q", "gq", { desc = "Format operator" })
--- map("n", "Q", "<nop>", { desc = "Disable Q" })
 
 map("n", "<C-d>", "<C-d>zz", { desc = "Half page down (center)" })
 map("n", "<C-u>", "<C-u>zz", { desc = "Half page up (center)" })
@@ -17,7 +15,6 @@ map("n", "N", "Nzzzv", { desc = "Prev search (center)" })
 map({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
 map("n", "<leader>Y", '"+Y', { desc = "Yank line to system clipboard" })
 
-map("n", "<C-v>", '"+p', { desc = "Paste system clipboard" })
 map("i", "<C-S-v>", "<C-r>+", { desc = "Paste system clipboard (insert)" })
 map("v", "<C-S-v>", '"+p', { desc = "Paste system clipboard (visual)" })
 

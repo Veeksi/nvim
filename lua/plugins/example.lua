@@ -4,9 +4,16 @@ return {
     opts = {
       servers = {
         pyright = {},
-
-        -- Keep JetBrains kotlin-lsp as the server key
         kotlin_lsp = {},
+        lua_ls = {
+          settings = {
+            Lua = {
+              diagnostics = {
+                globals = { "vim" },
+              },
+            },
+          },
+        },
       },
 
       setup = {
