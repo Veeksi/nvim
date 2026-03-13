@@ -33,3 +33,12 @@ map("n", "<leader>k", "<cmd>lnext<CR>zz", { desc = "Loclist next" })
 map("n", "<leader>j", "<cmd>lprev<CR>zz", { desc = "Loclist prev" })
 
 map("n", "<leader>src", "<cmd>Lazy reload<cr>", { desc = "Reload LazyVim" })
+
+map("n", "<leader>7", "gcc", {
+  remap = true,
+  desc = "Comment line",
+})
+map("x", "<leader>7", "gc", {
+  remap = true,
+  desc = "Comment selection",
+})
