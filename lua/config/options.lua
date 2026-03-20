@@ -39,6 +39,7 @@ vim.opt.timeout = true
 vim.opt.timeoutlen = 300
 
 -- Clipboard (IDE-ish)
+vim.g.clipboard = "osc52"
 vim.opt.clipboard = "unnamedplus"
 
 -- Misc (keep yours)
